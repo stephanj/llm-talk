@@ -1,0 +1,6 @@
+keys.txt
+langchain/**
+db/**
+.ipynb_checkpoints/**
+chroma_logs.log
+Untitled*.ipynb
