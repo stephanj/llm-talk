@@ -1,30 +1,37 @@
-#
-# Setup conda env and use Python version 3.9
-#
-conda create --name jupyter python=3.9
+# Install
 
-conda activate jupyter
+## Setup conda env and use Python version 3.9
 
-#
-#
-#
-conda install -c conda-forge ipywidgets
+```
+  conda create --name jupyter python=3.9
+```
 
-#
-# Install Jupyter 
-# See also https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
-# 
-conda install -c conda-forge jupyterlab
+```
+  conda activate jupyter
+```
 
-#
-# Start the jupyter notebook server
-#
-jupyter-lab
+```
+  conda install -c conda-forge ipywidgets
+```
 
+## Install Jupyter 
+See also https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
 
-#
-# On Mac M1 processors you need to have the arm64 lib versions
-# This is how you can install them.
-#
-pip uninstall hnswlib
-ARCHFLAGS="-arch arm64" pip install hnswlib --compile --no-cache-dir
+```
+  conda install -c conda-forge jupyterlab
+```
+
+## Start the jupyter notebook server
+
+```
+  jupyter-lab
+```
+
+On Mac M1 processors you need to have the arm64 lib versions
+This is how you can install them.
+
+```
+  pip uninstall hnswlib
+
+  ARCHFLAGS="-arch arm64" pip install hnswlib --compile --no-cache-dir
+```
