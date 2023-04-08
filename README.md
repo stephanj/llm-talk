@@ -14,14 +14,23 @@
   conda install -c conda-forge ipywidgets
 ```
 
-## Install Jupyter 
+## Install 
+
+You can use Visual Studio Code or use Jupyter notebook server instead.
+
+### Visual Studio Code
+
+Open the project folder using Visual Studio Code and run the Jupyter notebooks in the IDE.
+
+### Jupyter 
+
 See also https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
 
 ```
   conda install -c conda-forge jupyterlab
 ```
 
-## Start the jupyter notebook server
+#### Start the jupyter notebook server
 
 ```
   jupyter-lab
