@@ -107,3 +107,8 @@ The agent is run with a task to create a Python function that prints the word DE
 The output shows the code for the function and verifies that it produces the desired output.
 
 ## 9b. LLM & Python REPL - Game 2
+
+## ChatGPT Plugin
+
+An example of how to write and test a ChatGTP plugin which are currently still in private beta.
+
