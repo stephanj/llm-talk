@@ -67,11 +67,17 @@ It also includes code for loading data from YouTube videos using the YouTube Tra
 
 The notebook demonstrates two methods for summarizing text: "STUFF-ing" and "Map Reduce". The former involves stuffing all relevant data into a prompt as context to pass to the language model, while the latter involves an initial prompt on each chunk of data.
 
-## 4. LLM & YouTube & QnA
+## 4a. LLM & YouTube & QnA
 
 The code loads a YouTube video, splits it into chunks, converts those chunks into embeddings, and performs a similarity search to find the most relevant chunks to a given query. The code then uses those chunks to answer a question using a question-answering model. 
 
 There are several variations of the question-answering model used, including one that involves intermediate steps and a map-rerank method.
+
+## 4b. LLM & Groovy & QnA
+
+The code loads the Groovy documentation in HTML, strips the HTML tags and removed the new lines.
+Langchain splits the text into chunks, created embeddings and stores it into a FAISS in memory vector database.
+Now we can ask questions using the related Langchain lib.
 
 ## 5. LLM & QnA & Google Search
 
@@ -79,19 +85,25 @@ The notebook performs a question-answering task using various tools and APIs, in
 
 Finally, the script initializes a Google search agent and runs two queries using it.
 
-## 6. LLM & QnA & Web
-
-This example runs several questions through the LLM agent. The agent uses various tools such as search engines, calculators, and Wolfram Alpha to answer the questions posed to it.
-
-## 7. ChatGPT FAQ QnA
+## 6. ChatGPT FAQ
 
 This example uses OpenAI's CHATGPT to answer questions about Devoxx Belgium 2023. 
 
 It's designed to answer questions based on a pre-defined context and specific role. It allows to ask questions about the event's schedule, location, registration, ticket types, code of conduct, cancellation policy, transportation, and other relevant details. 
 
-## 8. LLM & Python REPL
+## 7. LLM & QnA & Web
+
+This example runs several questions through the LLM agent. The agent uses various tools such as search engines, calculators, and Wolfram Alpha to answer the questions posed to it.
+
+## 8. LLM Tools & QnA
+
+This example uses Python REPL and BashProcess to visit a website and get details from a webpage.
+
+## 9a. LLM & Python REPL - Game 1
 
 The example initializes an agent to execute a zero-shot-react-description task. 
 
 The agent is run with a task to create a Python function that prints the word DEVOXX using ASCII-art. 
 The output shows the code for the function and verifies that it produces the desired output.
+
+## 9b. LLM & Python REPL - Game 2
